@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WMm-fY-pE6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Video View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="VideoViewController" customModule="SmartCam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartCam" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,11 +20,129 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-KN-iuk">
+                                <rect key="frame" x="104" y="211" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Video"/>
+                                <connections>
+                                    <segue destination="Ge3-D0-8uG" kind="show" identifier="ToRecordVideo" id="Vwe-Xv-yYg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WvO-tk-cai">
+                                <rect key="frame" x="107" y="299" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Playback Video"/>
+                                <connections>
+                                    <segue destination="8nQ-RH-o3g" kind="show" identifier="ToPlaybackVideo" id="UPl-4i-MTa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GGI-Fm-vW6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="972" y="38.23088455772114"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="iBe-Q1-oyk">
+            <objects>
+                <viewController id="Ge3-D0-8uG" customClass="VideoViewController" customModule="SmartCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bin-Dc-UHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="33A-mR-3Sd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zoo-h4-DOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-kh-tEC" userLabel="CameraView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-NG-wwB">
+                                <rect key="frame" x="132.5" y="74" width="110" height="24"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="icK-Sn-J0x"/>
+                                    <constraint firstAttribute="width" constant="110" id="ifO-ST-xHy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7k-wP-lGw">
+                                <rect key="frame" x="162" y="606" width="51" height="51"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.62745098040000002" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="PW5-dr-ipG"/>
+                                    <constraint firstAttribute="height" constant="51" id="zNE-zZ-oID"/>
+                                </constraints>
+                                <state key="normal" title="Capture Button"/>
+                                <connections>
+                                    <action selector="onCaptureButton:" destination="Ge3-D0-8uG" eventType="touchUpInside" id="SfK-Nr-TdI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="33A-mR-3Sd" firstAttribute="top" secondItem="mp2-kh-tEC" secondAttribute="bottom" id="2R1-uF-BiZ"/>
+                            <constraint firstItem="c7k-wP-lGw" firstAttribute="centerX" secondItem="zoo-h4-DOZ" secondAttribute="centerX" id="EmM-4f-wiE"/>
+                            <constraint firstItem="mp2-kh-tEC" firstAttribute="top" secondItem="Bin-Dc-UHB" secondAttribute="bottom" id="GAA-nG-Ks3"/>
+                            <constraint firstItem="dd1-NG-wwB" firstAttribute="top" secondItem="Bin-Dc-UHB" secondAttribute="bottom" constant="10" id="HID-2t-TFb"/>
+                            <constraint firstAttribute="trailing" secondItem="mp2-kh-tEC" secondAttribute="trailing" id="e4r-c5-KEC"/>
+                            <constraint firstItem="33A-mR-3Sd" firstAttribute="top" secondItem="c7k-wP-lGw" secondAttribute="bottom" constant="10" id="lWl-g4-6aa"/>
+                            <constraint firstItem="dd1-NG-wwB" firstAttribute="centerX" secondItem="zoo-h4-DOZ" secondAttribute="centerX" id="o4T-AE-jZx"/>
+                            <constraint firstItem="mp2-kh-tEC" firstAttribute="leading" secondItem="zoo-h4-DOZ" secondAttribute="leading" id="rX7-KZ-zhI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="camPreview" destination="mp2-kh-tEC" id="I1k-w1-MlG"/>
+                        <outlet property="captureButton" destination="c7k-wP-lGw" id="jGv-Fv-5j4"/>
+                        <outlet property="timeLabel" destination="dd1-NG-wwB" id="EH3-gO-hU6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DBs-iO-ecP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1780" y="37.331334332833585"/>
+        </scene>
+        <!--Playback View Controller-->
+        <scene sceneID="x6u-gN-wzQ">
+            <objects>
+                <viewController id="8nQ-RH-o3g" customClass="PlaybackViewController" customModule="SmartCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QtF-9g-pab"/>
+                        <viewControllerLayoutGuide type="bottom" id="0fU-Nw-4ru"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nrz-us-M28">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbN-FC-4Nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="784"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F66-Rl-Bod">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WMm-fY-pE6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="go1-1l-rHg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VE9-xf-LcM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYM-WW-L06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>

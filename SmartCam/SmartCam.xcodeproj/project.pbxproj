@@ -15,6 +15,8 @@
 		C4A340A21EAE72CA009C4A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A340A01EAE72CA009C4A28 /* LaunchScreen.storyboard */; };
 		C4A340AD1EAE72CA009C4A28 /* SmartCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340AC1EAE72CA009C4A28 /* SmartCamTests.swift */; };
 		C4A340B81EAE72CA009C4A28 /* SmartCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340B71EAE72CA009C4A28 /* SmartCamUITests.swift */; };
+		C4A340C81EAE8180009C4A28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340C71EAE817F009C4A28 /* ViewController.swift */; };
+		C4A340CA1EAE823D009C4A28 /* PlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340C91EAE823D009C4A28 /* PlaybackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C4A340B31EAE72CA009C4A28 /* SmartCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A340B71EAE72CA009C4A28 /* SmartCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCamUITests.swift; sourceTree = "<group>"; };
 		C4A340B91EAE72CA009C4A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A340C71EAE817F009C4A28 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4A340C91EAE823D009C4A28 /* PlaybackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaybackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				C4A340941EAE72CA009C4A28 /* AppDelegate.swift */,
 				C4A340961EAE72CA009C4A28 /* VideoViewController.swift */,
+				C4A340C91EAE823D009C4A28 /* PlaybackViewController.swift */,
 				C4A340981EAE72CA009C4A28 /* Main.storyboard */,
+				C4A340C71EAE817F009C4A28 /* ViewController.swift */,
 				C4A3409E1EAE72CA009C4A28 /* Assets.xcassets */,
 				C4A340A01EAE72CA009C4A28 /* LaunchScreen.storyboard */,
 				C4A340A31EAE72CA009C4A28 /* Info.plist */,
@@ -266,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A340971EAE72CA009C4A28 /* VideoViewController.swift in Sources */,
+				C4A340CA1EAE823D009C4A28 /* PlaybackViewController.swift in Sources */,
 				C4A3409D1EAE72CA009C4A28 /* SmartCam.xcdatamodeld in Sources */,
+				C4A340C81EAE8180009C4A28 /* ViewController.swift in Sources */,
 				C4A340951EAE72CA009C4A28 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +431,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4945BM32J2;
 				INFOPLIST_FILE = SmartCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.lp.SmartCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4945BM32J2;
 				INFOPLIST_FILE = SmartCam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.lp.SmartCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
