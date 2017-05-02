@@ -26,7 +26,7 @@ class VideoViewController: UIViewController {
     var tapTimer: Timer!
     let HDVideoSize = CGSize(width: 1920.0, height: 1080.0)
     var totalRecordingTime: UInt = 0
-    var urlBuffer = RingBuffer<URL>(count: 8)
+    var urlBuffer = RingBuffer<URL>(count: 15)
     var count = 0
     
     @IBAction func onCaptureButton(_ sender: AnyObject) {
@@ -195,7 +195,7 @@ class VideoViewController: UIViewController {
         if tapTimer != nil {
             tapTimer.invalidate()
         }
-        tapTimer = Timer(timeInterval: 40, target: self, selector: #selector(getVideosForIncident), userInfo: nil, repeats: true)
+        tapTimer = Timer(timeInterval: 30, target: self, selector: #selector(getVideosForIncident), userInfo: nil, repeats: true)
         RunLoop.main.add(tapTimer, forMode: RunLoopMode.commonModes)
     }
     
@@ -287,10 +287,10 @@ class VideoViewController: UIViewController {
                 var alertMessage = ""
                 if success {
                     alertTitle = "Success!"
-                    alertMessage = "Video files merged successfully!"
+                    alertMessage = "Incident saved successfully!"
                 } else {
                     alertTitle = "Error!"
-                    alertMessage = "Video files merge failed!"
+                    alertMessage = "Failed to save incident!"
                 }
                 
                 let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
@@ -360,6 +360,7 @@ extension VideoViewController: AVCaptureFileOutputRecordingDelegate {
             if captureButton.isSelected == false {
                 print("Timer stopped")
                 stopTimer()
+                captureButton.setImage(UIImage(named: "Camera-50"), for: .normal)
                 print("videos in buffer: \(urlBuffer.array)")
             }else{
                 print("Recording stopped afer 5 sec")
@@ -371,7 +372,7 @@ extension VideoViewController: AVCaptureFileOutputRecordingDelegate {
     
     func capture(_ captureOutput: AVCaptureFileOutput!, didStartRecordingToOutputFileAt fileURL: URL!, fromConnections connections: [Any]!) {
         print("Timer started")
-        captureButton.setImage(UIImage(named: "Capture_Butt1"), for: .normal)
+        captureButton.setImage(UIImage(named: "Camera Filled-50"), for: .normal)
         startTimer()
        
     }

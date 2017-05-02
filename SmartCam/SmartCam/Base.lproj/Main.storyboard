@@ -62,9 +62,8 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-NG-wwB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-NG-wwB">
                                 <rect key="frame" x="132.5" y="74" width="110" height="24"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="icK-Sn-J0x"/>
                                     <constraint firstAttribute="width" constant="110" id="ifO-ST-xHy"/>
@@ -73,14 +72,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7k-wP-lGw">
-                                <rect key="frame" x="162" y="606" width="51" height="51"/>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.62745098040000002" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7k-wP-lGw">
+                                <rect key="frame" x="162.5" y="606" width="51" height="51"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="PW5-dr-ipG"/>
                                     <constraint firstAttribute="height" constant="51" id="zNE-zZ-oID"/>
                                 </constraints>
-                                <state key="normal" title="Capture Button"/>
+                                <state key="normal" image="Camera-50"/>
                                 <connections>
                                     <action selector="onCaptureButton:" destination="Ge3-D0-8uG" eventType="touchUpInside" id="SfK-Nr-TdI"/>
                                 </connections>
@@ -145,4 +143,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera-50" width="50" height="50"/>
+    </resources>
 </document>

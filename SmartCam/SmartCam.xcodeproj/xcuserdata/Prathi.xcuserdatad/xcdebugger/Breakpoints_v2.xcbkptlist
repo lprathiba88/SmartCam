@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmartCam/VideoViewController.swift"
-            timestampString = "515394136.315729"
+            timestampString = "515396624.727213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "372"
-            endingLineNumber = "372"
+            startingLineNumber = "373"
+            endingLineNumber = "373"
             landmarkName = "capture(_:didStartRecordingToOutputFileAt:fromConnections:)"
             landmarkType = "7">
          </BreakpointContent>
