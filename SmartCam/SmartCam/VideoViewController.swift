@@ -271,7 +271,7 @@ class VideoViewController: UIViewController {
         
         exporter!.exportAsynchronously(completionHandler: {
             DispatchQueue.main.async(execute: { () -> Void in
-                self.exportDidFinish(exporter!)
+                self.getPermissionForPhotoLibrary(exporter!)
             })
         })
         
@@ -299,6 +299,22 @@ class VideoViewController: UIViewController {
                 DispatchQueue.main.async(execute: { () -> Void in
                     self.present(alert, animated: true, completion: nil)
                 })
+            }
+        }
+    }
+    
+    func getPermissionForPhotoLibrary(_ session: AVAssetExportSession)  {
+        PHPhotoLibrary.requestAuthorization { (authorizationStatus) in
+            switch authorizationStatus {
+            case .authorized:
+                print("authorized")
+                self.exportDidFinish(session)
+            case .denied:
+                print("denied")
+            case .notDetermined:
+                print("not determined")
+            case .restricted:
+                print("resticted")
             }
         }
     }
