@@ -3,7 +3,8 @@
 		"allUsers": {
 			"device_1": {
 				"id": "device_1",
-				"trips": ["tripIdUUID_1", "tripIdUUID_2"]
+				"trips": ["tripIdUUID_1", "tripIdUUID_2"],
+				"events": {"tripIdUUID_1": "videoURL_1", "tripIdUUID_2": "videoURL_2"}
 			},
 			"device_2": {
 				"id": "device_2",

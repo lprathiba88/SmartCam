@@ -29,6 +29,7 @@ class VideoViewController: UIViewController {
     var totalRecordingTime: UInt = 0
     var urlBuffer = RingBuffer<URL>(count: 15)
     var count = 0
+    var videoURL: [String] = []
     
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -42,8 +43,10 @@ class VideoViewController: UIViewController {
             // start tracking location details
             locationManager.requestWhenInUseAuthorization()
             locationManager.delegate = self
+
             locationManager.startUpdatingLocation()
         }else {
+            //stop recording
             captureButton.isSelected = false
             print("Button deselected")
             
@@ -66,15 +69,16 @@ class VideoViewController: UIViewController {
         super.viewWillDisappear(animated)
        
         let name = "trip-\(getDateTime())" + UUID().uuidString
+        let user = UserDetails(name, videoURL , LocationDetails.arrayOfData)
         
-        let trip = TripDetails(name, LocationDetails.arrayOfData)
+        //add trip to Firebase
+        var finalDict:[String: Any] = [:]
+        finalDict[UserDetails.UserKeys.deviceID] = user.devideId
+        finalDict[UserDetails.UserKeys.events] = user.videoURL
+        finalDict[UserDetails.UserKeys.tripDetails] = user.encode()
         
-        let tripName = trip.tripName
-        let arrayofDic = trip.encode()
-        print("tripName: \(tripName) \n arrayofDic: \(arrayofDic)")
-        Firebase.shared.addTripToFirebase(tripName, arrayofDic)
+        Firebase.shared.addTripToFirebase(user.tripName, finalDict)
         
-        //Firebase.shared.addTripToFirebase(trip.tripName, trip.encode())
     }
     
     func setupCameraSession() -> Bool{
@@ -158,7 +162,10 @@ class VideoViewController: UIViewController {
     
     func uniqueURL() -> URL? {
         let directory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
-        let path = directory.appendingPathComponent("incident-\(getDateTime()).mov")
+        let dateTime = getDateTime()
+        //self.videoURL.append("incident-\(dateTime).mov")
+        let path = directory.appendingPathComponent("incident-\(dateTime).mov")
+        self.videoURL.append(path)
         
         return URL(fileURLWithPath: path)
     }
@@ -193,12 +200,11 @@ class VideoViewController: UIViewController {
         RunLoop.main.add(updateTimer, forMode: RunLoopMode.commonModes)
     }
     
-    func updateTimeDisplay() {
+    func updateTimeDisplay(_ sender: Timer) {
         let time = UInt(CMTimeGetSeconds(movieOutput.recordedDuration))
-        
-        // 5 sec videos
         print("time: \(time)")
         if time == 5 {
+            locationManager.requestLocation()
             count += 1
             if count%2 == 0 {
                 totalRecordingTime += time
@@ -443,7 +449,7 @@ extension VideoViewController: AVCaptureFileOutputRecordingDelegate {
 
 extension VideoViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        //print(locations.first!.timestamp)
+        //print(locations.first)
         
         let latitude = String(describing: locations.first!.coordinate.latitude)
         let longitude = String(describing: locations.first!.coordinate.longitude)
@@ -454,6 +460,10 @@ extension VideoViewController: CLLocationManagerDelegate {
         
         let locationDetails = LocationDetails(latitude, longitude, speed, dateTime)
         LocationDetails.arrayOfData.append(locationDetails)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
     }
 }
 

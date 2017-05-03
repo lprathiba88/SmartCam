@@ -22,8 +22,9 @@
 		C4A340F81EB97775009C4A28 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340F71EB97775009C4A28 /* EventsViewController.swift */; };
 		C4A340FA1EB98152009C4A28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4A340F91EB98152009C4A28 /* GoogleService-Info.plist */; };
 		C4A340FC1EB983A9009C4A28 /* LocationDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340FB1EB983A9009C4A28 /* LocationDetails.swift */; };
-		C4A340FE1EB983E5009C4A28 /* TripDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340FD1EB983E5009C4A28 /* TripDetails.swift */; };
 		C4A341001EB98429009C4A28 /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340FF1EB98429009C4A28 /* Firebase.swift */; };
+		C4A341021EBA4E2E009C4A28 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A341011EBA4E2E009C4A28 /* TripsViewController.swift */; };
+		C4A341041EBA512D009C4A28 /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A341031EBA512D009C4A28 /* UserDetails.swift */; };
 		CCBD0C3070B61D9A91854288 /* Pods_SmartCamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57206532190BF3CB0FFDBDED /* Pods_SmartCamTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,8 +69,9 @@
 		C4A340F71EB97775009C4A28 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		C4A340F91EB98152009C4A28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C4A340FB1EB983A9009C4A28 /* LocationDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetails.swift; sourceTree = "<group>"; };
-		C4A340FD1EB983E5009C4A28 /* TripDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetails.swift; sourceTree = "<group>"; };
 		C4A340FF1EB98429009C4A28 /* Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		C4A341011EBA4E2E009C4A28 /* TripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		C4A341031EBA512D009C4A28 /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		C8BF78D5FB2EB0F48294ED5E /* Pods-SmartCamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCamUITests/Pods-SmartCamUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D799D715543BA444B39C24C3 /* Pods-SmartCamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCamTests/Pods-SmartCamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E304DBE9CF1917B00B906CF6 /* Pods-SmartCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCam/Pods-SmartCam.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,20 +155,17 @@
 		C4A340931EAE72CA009C4A28 /* SmartCam */ = {
 			isa = PBXGroup;
 			children = (
-				C4A340F91EB98152009C4A28 /* GoogleService-Info.plist */,
 				C4A340941EAE72CA009C4A28 /* AppDelegate.swift */,
-				C4A340961EAE72CA009C4A28 /* VideoViewController.swift */,
-				C4A340C91EAE823D009C4A28 /* PlaybackViewController.swift */,
+				C4A340FF1EB98429009C4A28 /* Firebase.swift */,
+				C4A341061EBA5182009C4A28 /* Home Tab */,
+				C4A341071EBA51A4009C4A28 /* Events Tab */,
 				C4A340981EAE72CA009C4A28 /* Main.storyboard */,
-				C4A340F71EB97775009C4A28 /* EventsViewController.swift */,
-				C4A340C71EAE817F009C4A28 /* HomeViewController.swift */,
+				C4A341051EBA514B009C4A28 /* Models */,
 				C4A3409E1EAE72CA009C4A28 /* Assets.xcassets */,
 				C4A340A01EAE72CA009C4A28 /* LaunchScreen.storyboard */,
 				C4A340A31EAE72CA009C4A28 /* Info.plist */,
+				C4A340F91EB98152009C4A28 /* GoogleService-Info.plist */,
 				C4A3409B1EAE72CA009C4A28 /* SmartCam.xcdatamodeld */,
-				C4A340FB1EB983A9009C4A28 /* LocationDetails.swift */,
-				C4A340FD1EB983E5009C4A28 /* TripDetails.swift */,
-				C4A340FF1EB98429009C4A28 /* Firebase.swift */,
 			);
 			path = SmartCam;
 			sourceTree = "<group>";
@@ -187,6 +186,34 @@
 				C4A340B91EAE72CA009C4A28 /* Info.plist */,
 			);
 			path = SmartCamUITests;
+			sourceTree = "<group>";
+		};
+		C4A341051EBA514B009C4A28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4A341031EBA512D009C4A28 /* UserDetails.swift */,
+				C4A340FB1EB983A9009C4A28 /* LocationDetails.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C4A341061EBA5182009C4A28 /* Home Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C4A340961EAE72CA009C4A28 /* VideoViewController.swift */,
+				C4A340C71EAE817F009C4A28 /* HomeViewController.swift */,
+				C4A341011EBA4E2E009C4A28 /* TripsViewController.swift */,
+			);
+			name = "Home Tab";
+			sourceTree = "<group>";
+		};
+		C4A341071EBA51A4009C4A28 /* Events Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C4A340C91EAE823D009C4A28 /* PlaybackViewController.swift */,
+				C4A340F71EB97775009C4A28 /* EventsViewController.swift */,
+			);
+			name = "Events Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,14 +502,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A340971EAE72CA009C4A28 /* VideoViewController.swift in Sources */,
-				C4A340FE1EB983E5009C4A28 /* TripDetails.swift in Sources */,
 				C4A340CA1EAE823D009C4A28 /* PlaybackViewController.swift in Sources */,
 				C4A3409D1EAE72CA009C4A28 /* SmartCam.xcdatamodeld in Sources */,
 				C4A340C81EAE8180009C4A28 /* HomeViewController.swift in Sources */,
 				C4A340FC1EB983A9009C4A28 /* LocationDetails.swift in Sources */,
+				C4A341041EBA512D009C4A28 /* UserDetails.swift in Sources */,
 				C4A341001EB98429009C4A28 /* Firebase.swift in Sources */,
 				C4A340951EAE72CA009C4A28 /* AppDelegate.swift in Sources */,
 				C4A340F81EB97775009C4A28 /* EventsViewController.swift in Sources */,
+				C4A341021EBA4E2E009C4A28 /* TripsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

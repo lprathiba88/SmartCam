@@ -1,0 +1,39 @@
+{
+	"tripData": {
+		"tripIdUUID_1": {
+			"deviceID": "device_1",
+			"events": ["videoURL_1", "videoURL_2"],
+			"tripDetails":[{
+				"latitude": "123214",
+				"longitude": "-546.45",
+				"speed": 25,
+				"timestamp": "2017/05/2 18:20:00",
+				},
+				{
+				"latitude": "127214",
+				"longitude": "-546.45",
+				"speed": 25,
+				"timestamp": "2017/05/2 18:22:00"
+				}
+			]			
+		},
+		"tripIdUUID_2": {
+			"deviceID": "device_1",
+			"events": ["videoURL_3", "videoURL_4"],
+			"tripDetails":[
+				{
+				"latitude": "123214",
+				"longitude": "-546.45",
+				"speed": 25,
+				"timestamp": "2017/05/2 18:20:00"
+				},
+				{
+				"latitude": "127214",
+				"longitude": "-546.45",
+				"speed": 25,
+				"timestamp": "2017/05/2 18:22:00"
+				}
+			]
+		}
+	}
+}		

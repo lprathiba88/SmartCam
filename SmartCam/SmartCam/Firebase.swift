@@ -12,10 +12,11 @@ import Firebase
 class Firebase {
     
     static var shared: Firebase! = Firebase()
+    let ref: FIRDatabaseReference = FIRDatabase.database().reference()
     
-    func addTripToFirebase(_ key: String, _ data: [[String: Any]]) {
-        let ref: FIRDatabaseReference = FIRDatabase.database().reference()
-        ref.child("data").child("allTrips").child(key).setValue(data)
+    func addTripToFirebase(_ tripKey: String, _ data: [String: Any]) {
+        // update trips
+        ref.child("data").child("allTrips").child(tripKey).setValue(data)
     }
     
     func getTripFromFirebase() {
