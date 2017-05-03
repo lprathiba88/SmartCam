@@ -1,0 +1,43 @@
+{
+"data": {
+		"allUsers": {
+			"device_1": {
+				"id": "device_1",
+				"trips": ["tripIdUUID_1", "tripIdUUID_2"]
+			},
+			"device_2": {
+				"id": "device_2",
+				"trips": ["tripIdUUID_3", "tripIdUUID_4"]
+			}
+		},
+		"allTrips": {
+			"tripIdUUID_1": [{
+					"latitude": "123214",
+					"longitude": "-546.45",
+					"speed": 25,
+					"timestamp": "2017/05/2 18:20:00"
+				},
+				{
+					"latitude": "127214",
+					"longitude": "-546.45",
+					"speed": 25,
+					"timestamp": "2017/05/2 18:22:00"
+				}
+			
+			],
+			"tripIdUUID_2": [{
+					"latitude": "123214",
+					"longitude": "-546.45",
+					"speed": 25,
+					"timestamp": "2017/05/2 18:20:00"
+				},
+				{
+					"latitude": "127214",
+					"longitude": "-546.45",
+					"speed": 25,
+					"timestamp": "2017/05/2 18:22:00"
+				}
+			]
+		}
+	}		
+}

@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Photos
+import CoreLocation
 
 class VideoViewController: UIViewController {
     
@@ -19,7 +20,7 @@ class VideoViewController: UIViewController {
     let cameraSession = AVCaptureSession()
     var previewLayer: AVCaptureVideoPreviewLayer!
     var activeInput: AVCaptureDeviceInput!
-    
+    let locationManager = CLLocationManager()
     var modeData = [String]()
     let movieOutput = AVCaptureMovieFileOutput()
     var updateTimer: Timer!
@@ -29,13 +30,25 @@ class VideoViewController: UIViewController {
     var urlBuffer = RingBuffer<URL>(count: 15)
     var count = 0
     
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func onCaptureButton(_ sender: AnyObject) {
         if captureButton.isSelected == false {
             captureButton.isSelected = true
             print("Button selected")
+            
+            // start tracking location details
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.delegate = self
+            locationManager.startUpdatingLocation()
         }else {
             captureButton.isSelected = false
             print("Button deselected")
+            
+            // stop location tracking
+            locationManager.stopUpdatingLocation()
         }
         captureMovie()
     }
@@ -47,6 +60,21 @@ class VideoViewController: UIViewController {
             setupPreview()
             startSession()
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+       
+        let name = "trip-\(getDateTime())" + UUID().uuidString
+        
+        let trip = TripDetails(name, LocationDetails.arrayOfData)
+        
+        let tripName = trip.tripName
+        let arrayofDic = trip.encode()
+        print("tripName: \(tripName) \n arrayofDic: \(arrayofDic)")
+        Firebase.shared.addTripToFirebase(tripName, arrayofDic)
+        
+        //Firebase.shared.addTripToFirebase(trip.tripName, trip.encode())
     }
     
     func setupCameraSession() -> Bool{
@@ -130,14 +158,18 @@ class VideoViewController: UIViewController {
     
     func uniqueURL() -> URL? {
         let directory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let path = directory.appendingPathComponent("incident-\(getDateTime()).mov")
+        
+        return URL(fileURLWithPath: path)
+    }
+    
+    func getDateTime() -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .long
         let date = dateFormatter.string(from: Date())
         
-        let path = directory.appendingPathComponent("incident-\(date).mov")
-        
-        return URL(fileURLWithPath: path)
+        return date
     }
     
     func formattedCurrentTime(_ time: UInt) -> String {
@@ -195,7 +227,7 @@ class VideoViewController: UIViewController {
         if tapTimer != nil {
             tapTimer.invalidate()
         }
-        tapTimer = Timer(timeInterval: 30, target: self, selector: #selector(getVideosForIncident), userInfo: nil, repeats: true)
+        tapTimer = Timer(timeInterval: 20, target: self, selector: #selector(getVideosForIncident), userInfo: nil, repeats: true)
         RunLoop.main.add(tapTimer, forMode: RunLoopMode.commonModes)
     }
     
@@ -204,11 +236,11 @@ class VideoViewController: UIViewController {
         print("timer stopped afer 30 seconds of tap")
         
         // get 30 seconds of video before and after the tap gesture
-        urlBuffer.readIndex = urlBuffer.writeIndex - 12
+        urlBuffer.readIndex = urlBuffer.writeIndex - 8
         var incidentArray: [URL] = []
         var count = 0
         
-        while  count < 12 {
+        while  count < 8 {
             incidentArray.append(urlBuffer.read()!)
             count += 1
         }
@@ -319,6 +351,21 @@ class VideoViewController: UIViewController {
         }
     }
     
+//    func getPermissionToTrackLocation()  {
+//        PHPhotoLibrary.requestAuthorization { (authorizationStatus) in
+//            switch authorizationStatus {
+//            case .authorized:
+//                print("authorized")
+//            case .denied:
+//                print("denied")
+//            case .notDetermined:
+//                print("not determined")
+//            case .restricted:
+//                print("resticted")
+//            }
+//        }
+//    }
+    
     func videoCompositionInstructionForTrack(track: AVCompositionTrack, asset: AVAsset) -> AVMutableVideoCompositionLayerInstruction {
         
         let instruction = AVMutableVideoCompositionLayerInstruction(assetTrack: track)
@@ -391,6 +438,22 @@ extension VideoViewController: AVCaptureFileOutputRecordingDelegate {
         captureButton.setImage(UIImage(named: "Camera Filled-50"), for: .normal)
         startTimer()
        
+    }
+}
+
+extension VideoViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //print(locations.first!.timestamp)
+        
+        let latitude = String(describing: locations.first!.coordinate.latitude)
+        let longitude = String(describing: locations.first!.coordinate.longitude)
+        let speed = Double(locations.first!.speed)
+        let dateTime = locations.first!.timestamp.description
+        
+        print("latitude: \(latitude) \n longitude: \(longitude) \n speed: \(speed) \n date&time: \(dateTime)")
+        
+        let locationDetails = LocationDetails(latitude, longitude, speed, dateTime)
+        LocationDetails.arrayOfData.append(locationDetails)
     }
 }
 
