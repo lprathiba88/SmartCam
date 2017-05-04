@@ -10,7 +10,7 @@ import Foundation
 
 class UserDetails {
     
-    let devideId: String
+    static var devideId = "device_1"
     let tripName: String
     let videoURL: [String]
     let tripDetails: [LocationDetails]
@@ -19,14 +19,7 @@ class UserDetails {
         self.tripName = tripName
         self.videoURL = videoURL
         self.tripDetails = details
-        self.devideId = "device_1"
-    }
-    
-    func createDictionaryOfEventsForTrip() -> [String: [String]]{
-        var eventsDictionary: [String: [String]] = [:]        
-        eventsDictionary[tripName] = videoURL
-        
-        return eventsDictionary
+        //self.devideId = "device_1"
     }
     
     func encode() -> [[String: Any]] {
@@ -37,6 +30,7 @@ class UserDetails {
         static let deviceID = "deviceID"
         static let tripDetails = "tripDetails"
         static let events = "events"
+        static let tripName = "tripName"
     }
     
     

@@ -73,7 +73,7 @@ class VideoViewController: UIViewController {
         
         //add trip to Firebase
         var finalDict:[String: Any] = [:]
-        finalDict[UserDetails.UserKeys.deviceID] = user.devideId
+        finalDict[UserDetails.UserKeys.deviceID] = UserDetails.devideId
         finalDict[UserDetails.UserKeys.events] = user.videoURL
         finalDict[UserDetails.UserKeys.tripDetails] = user.encode()
         

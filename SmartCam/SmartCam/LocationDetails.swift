@@ -28,12 +28,20 @@ class LocationDetails {
     func encode() -> [String: Any]{
         var details: [String: Any] = [:]
         
-        details["latitude"] = self.latitude
-        details["longitude"] = self.longitude
-        details["speed"] = self.speed
-        details["dateAndTime"] = self.dateAndTime
+        details[LocationKeys.latitude] = self.latitude
+        details[LocationKeys.longitude] = self.longitude
+        details[LocationKeys.speed] = self.speed
+        details[LocationKeys.dateAndTime] = self.dateAndTime
         
         return details
+    }
+    
+    struct LocationKeys {
+        static let latitude = "latitude"
+        static let longitude = "longitude"
+        static let speed = "speed"
+        static let dateAndTime = "dateAndTime"
+
     }
     
 }
