@@ -33,5 +33,6 @@ class UserDetails {
         static let tripName = "tripName"
     }
     
+    static var tripsArray = [UserDetails]()
     
 }

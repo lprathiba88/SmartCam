@@ -163,9 +163,7 @@ class VideoViewController: UIViewController {
     func uniqueURL() -> URL? {
         let directory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
         let dateTime = getDateTime()
-        //self.videoURL.append("incident-\(dateTime).mov")
         let path = directory.appendingPathComponent("incident-\(dateTime).mov")
-        self.videoURL.append(path)
         
         return URL(fileURLWithPath: path)
     }
@@ -315,15 +313,19 @@ class VideoViewController: UIViewController {
         
     }
     
-    func exportDidFinish(_ session: AVAssetExportSession) {
+    func exportDidFinish(_ session: AVAssetExportSession, completion: @escaping (String?) -> Void) {
         if session.status == AVAssetExportSessionStatus.completed {
             let photoLibrary = PHPhotoLibrary.shared()
+            var localIdentifier: String?
             photoLibrary.performChanges({
-                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: session.outputURL!)
+                let changeRequest = PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: session.outputURL!)
+                let placeholder = changeRequest?.placeholderForCreatedAsset
+                localIdentifier = placeholder?.localIdentifier
             }) { (success: Bool, error: Error?) -> Void in
                 var alertTitle = ""
                 var alertMessage = ""
                 if success {
+                    completion(localIdentifier)
                     alertTitle = "Success!"
                     alertMessage = "Incident saved successfully!"
                 } else {
@@ -346,7 +348,12 @@ class VideoViewController: UIViewController {
             switch authorizationStatus {
             case .authorized:
                 print("authorized")
-                self.exportDidFinish(session)
+                self.exportDidFinish(session) { localIdentifier in
+                    // TODO: Save Local Identifier
+                    if let localIdentifier = localIdentifier {
+                        self.videoURL.append(localIdentifier)
+                    }
+                }
             case .denied:
                 print("denied")
             case .notDetermined:
@@ -356,6 +363,8 @@ class VideoViewController: UIViewController {
             }
         }
     }
+    
+    
     
 //    func getPermissionToTrackLocation()  {
 //        PHPhotoLibrary.requestAuthorization { (authorizationStatus) in

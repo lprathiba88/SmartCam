@@ -1,17 +1,18 @@
 //
-//  TripsTableViewCell.swift
+//  EventsTableViewCell.swift
 //  SmartCam
 //
-//  Created by Prathiba Lingappan on 5/3/17.
+//  Created by Prathiba Lingappan on 5/4/17.
 //  Copyright © 2017 Prathiba Lingappan. All rights reserved.
 //
 
 import UIKit
 
-class TripsTableViewCell: UITableViewCell {
+class EventsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var tripName: UILabel!    
-    @IBOutlet weak var eventIcon: UIImageView!
+    @IBOutlet weak var videoThumbnail: UIImageView!
+    @IBOutlet weak var videoName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
