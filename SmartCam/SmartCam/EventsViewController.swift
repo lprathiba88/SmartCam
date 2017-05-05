@@ -110,14 +110,15 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 cell.videoThumbnail.image = self.previewImageFromVideo(asset)
             }            
         }
-        cell.videoName.text = self.videoURLStrings[indexPath.row]
+        //cell.videoName.text = self.videoURLStrings[indexPath.row]
+        cell.videoName.text = "video - \(String(indexPath.row + 1))"
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedIndexPath = indexPath.row
-        
+        tableView.deselectRow(at: indexPath, animated: true)
         if selectedIndexPath != -1 {
             //print("selectedUrl[selectedIndexPath]: \(selectedUrl[selectedIndexPath])")
             if let asset = videoAsset {

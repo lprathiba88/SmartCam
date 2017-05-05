@@ -10,6 +10,20 @@
 		47C4AD8225F6B91BE684D450 /* Pods_SmartCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2CC041BAA0556AE0739F14 /* Pods_SmartCam.framework */; };
 		6A555F8F5A83594FECE1DD4A /* Pods_SmartCamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BC789E049AEA6002AD09E04 /* Pods_SmartCamUITests.framework */; };
 		C426932B1EBBA8D9006041C0 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C426932A1EBBA8D9006041C0 /* EventsTableViewCell.swift */; };
+		C42C022F1EBC240200A384CA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42C022E1EBC240200A384CA /* MapViewController.swift */; };
+		C42C02311EBC243100A384CA /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42C02301EBC243100A384CA /* MapTasks.swift */; };
+		C42C02331EBC2F5600A384CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02321EBC2F5600A384CA /* AVFoundation.framework */; };
+		C42C02351EBC2F7100A384CA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02341EBC2F7100A384CA /* CoreData.framework */; };
+		C42C02371EBC2F7800A384CA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02361EBC2F7800A384CA /* CoreLocation.framework */; };
+		C42C02391EBC2F8000A384CA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02381EBC2F8000A384CA /* CoreText.framework */; };
+		C42C023B1EBC2F9700A384CA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C023A1EBC2F9700A384CA /* GLKit.framework */; };
+		C42C023D1EBC2F9E00A384CA /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C023C1EBC2F9E00A384CA /* ImageIO.framework */; };
+		C42C023F1EBC2FDE00A384CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C023E1EBC2FDE00A384CA /* libc++.tbd */; };
+		C42C02411EBC2FF900A384CA /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02401EBC2FF900A384CA /* libicucore.tbd */; };
+		C42C02431EBC300100A384CA /* libicucore.A.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02421EBC300100A384CA /* libicucore.A.tbd */; };
+		C42C02451EBC305200A384CA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02441EBC305200A384CA /* OpenGLES.framework */; };
+		C42C02471EBC305F00A384CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02461EBC305F00A384CA /* QuartzCore.framework */; };
+		C42C02491EBC306E00A384CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42C02481EBC306E00A384CA /* SystemConfiguration.framework */; };
 		C4A340951EAE72CA009C4A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340941EAE72CA009C4A28 /* AppDelegate.swift */; };
 		C4A340971EAE72CA009C4A28 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A340961EAE72CA009C4A28 /* VideoViewController.swift */; };
 		C4A3409A1EAE72CA009C4A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4A340981EAE72CA009C4A28 /* Main.storyboard */; };
@@ -54,6 +68,20 @@
 		5D23B8864E2A65F9E934EAF5 /* Pods-SmartCamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartCamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmartCamUITests/Pods-SmartCamUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6BC789E049AEA6002AD09E04 /* Pods_SmartCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartCamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C426932A1EBBA8D9006041C0 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		C42C022E1EBC240200A384CA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C42C02301EBC243100A384CA /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
+		C42C02321EBC2F5600A384CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C42C02341EBC2F7100A384CA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C42C02361EBC2F7800A384CA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C42C02381EBC2F8000A384CA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C42C023A1EBC2F9700A384CA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C42C023C1EBC2F9E00A384CA /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C42C023E1EBC2FDE00A384CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C42C02401EBC2FF900A384CA /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		C42C02421EBC300100A384CA /* libicucore.A.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.A.tbd; path = usr/lib/libicucore.A.tbd; sourceTree = SDKROOT; };
+		C42C02441EBC305200A384CA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C42C02461EBC305F00A384CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C42C02481EBC306E00A384CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C4A340911EAE72CA009C4A28 /* SmartCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A340941EAE72CA009C4A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A340961EAE72CA009C4A28 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +118,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42C02491EBC306E00A384CA /* SystemConfiguration.framework in Frameworks */,
+				C42C02471EBC305F00A384CA /* QuartzCore.framework in Frameworks */,
+				C42C02451EBC305200A384CA /* OpenGLES.framework in Frameworks */,
+				C42C02431EBC300100A384CA /* libicucore.A.tbd in Frameworks */,
+				C42C02411EBC2FF900A384CA /* libicucore.tbd in Frameworks */,
+				C42C023F1EBC2FDE00A384CA /* libc++.tbd in Frameworks */,
+				C42C023D1EBC2F9E00A384CA /* ImageIO.framework in Frameworks */,
+				C42C023B1EBC2F9700A384CA /* GLKit.framework in Frameworks */,
+				C42C02391EBC2F8000A384CA /* CoreText.framework in Frameworks */,
+				C42C02371EBC2F7800A384CA /* CoreLocation.framework in Frameworks */,
+				C42C02351EBC2F7100A384CA /* CoreData.framework in Frameworks */,
+				C42C02331EBC2F5600A384CA /* AVFoundation.framework in Frameworks */,
 				47C4AD8225F6B91BE684D450 /* Pods_SmartCam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +169,18 @@
 		BC5211EFCC2B21542C7302AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C42C02481EBC306E00A384CA /* SystemConfiguration.framework */,
+				C42C02461EBC305F00A384CA /* QuartzCore.framework */,
+				C42C02441EBC305200A384CA /* OpenGLES.framework */,
+				C42C02421EBC300100A384CA /* libicucore.A.tbd */,
+				C42C02401EBC2FF900A384CA /* libicucore.tbd */,
+				C42C023E1EBC2FDE00A384CA /* libc++.tbd */,
+				C42C023C1EBC2F9E00A384CA /* ImageIO.framework */,
+				C42C023A1EBC2F9700A384CA /* GLKit.framework */,
+				C42C02381EBC2F8000A384CA /* CoreText.framework */,
+				C42C02361EBC2F7800A384CA /* CoreLocation.framework */,
+				C42C02341EBC2F7100A384CA /* CoreData.framework */,
+				C42C02321EBC2F5600A384CA /* AVFoundation.framework */,
 				0B2CC041BAA0556AE0739F14 /* Pods_SmartCam.framework */,
 				57206532190BF3CB0FFDBDED /* Pods_SmartCamTests.framework */,
 				6BC789E049AEA6002AD09E04 /* Pods_SmartCamUITests.framework */,
@@ -199,6 +251,7 @@
 			children = (
 				C4A341031EBA512D009C4A28 /* UserDetails.swift */,
 				C4A340FB1EB983A9009C4A28 /* LocationDetails.swift */,
+				C42C02301EBC243100A384CA /* MapTasks.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -211,6 +264,7 @@
 				C4A341011EBA4E2E009C4A28 /* TripsViewController.swift */,
 				C4A341081EBA9B0F009C4A28 /* TripsTableViewCell.swift */,
 				C4A3410A1EBAEB95009C4A28 /* TripDetailsViewController.swift */,
+				C42C022E1EBC240200A384CA /* MapViewController.swift */,
 			);
 			name = "Home Tab";
 			sourceTree = "<group>";
@@ -516,6 +570,7 @@
 				C4A3410B1EBAEB95009C4A28 /* TripDetailsViewController.swift in Sources */,
 				C4A341091EBA9B0F009C4A28 /* TripsTableViewCell.swift in Sources */,
 				C4A3409D1EAE72CA009C4A28 /* SmartCam.xcdatamodeld in Sources */,
+				C42C02311EBC243100A384CA /* MapTasks.swift in Sources */,
 				C4A340C81EAE8180009C4A28 /* HomeViewController.swift in Sources */,
 				C4A340FC1EB983A9009C4A28 /* LocationDetails.swift in Sources */,
 				C4A341041EBA512D009C4A28 /* UserDetails.swift in Sources */,
@@ -523,6 +578,7 @@
 				C4A340951EAE72CA009C4A28 /* AppDelegate.swift in Sources */,
 				C4A340F81EB97775009C4A28 /* EventsViewController.swift in Sources */,
 				C4A341021EBA4E2E009C4A28 /* TripsViewController.swift in Sources */,
+				C42C022F1EBC240200A384CA /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

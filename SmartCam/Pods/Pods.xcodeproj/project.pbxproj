@@ -7,25 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03EE30A3FFD7BF856C008B3DC8139F07 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B01942D8D29E21895CB58A558220D3 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		04A9EAF23667AB20F1856B4C127E2CCB /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D99E21D5EB1A422A9EC8C22C2433BCD /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		10CAA30D7B3B427DCBC21927710F0744 /* Pods-SmartCamTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03976E2D32B0E47A9B216390E9485994 /* Pods-SmartCamTests-dummy.m */; };
 		1458940EEBB6B12257DED5DDFECF6B3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		17324C65D462CE42545B85FBFDE38E1D /* Pods-SmartCamUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166696E26CABAAE7D33E8F2782E4EAD /* Pods-SmartCamUITests-dummy.m */; };
+		23E9973F4DC00EEF5FFFC53B5C4F9CCE /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09696C2271CC47AAB2F07060967CB6B3 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3159D7CAFD56B809F40CA3330DA10889 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E7AEA79B27BB2372F07958787A39E3 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F571528DF298DA5D0DBD35F3AF22C82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1988AAEAA95D090574159B2E1DB88516 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35BA53BE44A5FAEE1FB680E12A243846 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBF9C8F7EB965565E661C8F72F269D /* HexColorTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		37D7FFC8B873CCBBC84E0912840FC2FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		4A686B24A6E57B30E0813CC86B2BCEC4 /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC1B1300536AA7104B0DADEFF40E75B /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		541C5362289CC44D4F067D097F231250 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E74276895A1542D295291EF4064E033 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		554024125BDDD8CFE0FA9F47CF450D38 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7936F50435D9606E47D9866518B18A72 /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		61099F86469824ED2966FD4CDE3B4B2B /* Pods-SmartCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E18E31068BE5D6DF0863BF452B82B31F /* Pods-SmartCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64C08047F018142FFAA2D6A8EAD6CEF0 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE6890859B999C6CD27152F3BE6ABE9 /* EnumOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6D4763209A3F094E8162FD1A86751B8D /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DD36BFE7499FF785D68C24D93EF2D7 /* MapError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DAED6422428C654CA60E648413A05B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		714BD67B41EEBEAC20CB958A882DE0AD /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B19E6FFCA7A85867BC61343E6A14E3 /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		80DD3BF9141268B7FD837C9EAFD1207B /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2612A26CD26B6917FC3D1442AD09AE8 /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81E4B6988FF26F9249B79C6C8CC667B4 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC1CEA65A08860300F8020DCFBA4EF4 /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82CC59765FCF6BB742B83109450663A7 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE846E8C57EFA3BC7A75C7F3897A8C77 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		857DDF98BBF9C9284CCD1F0F0CE9A85E /* Pods-SmartCamUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F53EC14D2CFADE583405BCE983EA5EF7 /* Pods-SmartCamUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89F78630FEC6803DF4A61C23E939C40F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9EA52AEB7278984474CC743711FCB699 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FB0261CC03C99B41E0AA42891FBAC2 /* TransformOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A128DBCF691E0F4D2AC3EEA36F7BD562 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E2762DD360B24DEC8C141B4AD769FF /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B1494B96861D28886774A62ADF12B4 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8960F1FDF1D274915194DA414B7C1999 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A38E9060A5BC11E9EB1D869DE1873AE5 /* Pods-SmartCamTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF1B1BF8A30E24719FD0F1592201F24 /* Pods-SmartCamTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB222617458CF2ABDD5CDCCB7330F79E /* Pods-SmartCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390DF1FCF221C9F0419F59978C404013 /* Pods-SmartCam-dummy.m */; };
-		BED1DBE97F9969F95CB954CF3A37250E /* Pods-SmartCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E18E31068BE5D6DF0863BF452B82B31F /* Pods-SmartCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 265BC960BD6B075EE36C1EF317263970 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8822B7474563581E8EEF4D8EE3528906 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F89ABD6004208281A66F928B881348 /* GoogleToolboxForMac-dummy.m */; };
+		A4C95C686C63C3BE2768F6ED69C9BB9B /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21680A22FE887B74A3AD945A5B09086B /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD31AD8DB949DCA3E7FD8305331A74FA /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7CD101223C051BEC9B3E42A4ED26BF /* IntegerOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BB25C008983EC07CDBF46FC40B984BE6 /* Pods-SmartCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 390DF1FCF221C9F0419F59978C404013 /* Pods-SmartCam-dummy.m */; };
+		DA8070AA9696822F0242CC298668AFF7 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F980806720EEC4A47A731B87C4C16B4 /* ObjectMapper-dummy.m */; };
+		DB16BA7FF7677EB77FF201C169EBA7F5 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D77F57989A9E78756A36577132D58A /* DataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DBFECCB0BBE3F11CC41A3C1A8C4879D3 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 7352FCC2D9EEED4B47DF1E925E808A39 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD24CA00C4CA98203B6B61771D605BF7 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03BA8D2FBE9498B10A8819E7880A4C /* ImmutableMappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF10B74DAD2CFA3392369651FA4E1388 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89DFC86ACF0F6F74DBB99688A5A1CA1 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E0CBFD38A5408B925188989A41F3CB94 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038FD81EFB79783BC7887A7440198E95 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F0BE6FD4C256E93CBCB31150A1A489EB /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E911967BC52F14228C35B5F5C7D2FA2 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F7D889906DECB078EAAECB9D4A320E9C /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8BA2F0EBA912612C916B133C5FC7D4 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F9EB49D9D6AC0EA662DEE43EAF966B5A /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A96946FBBCF7321FAF8DE9DDDDA5C4 /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FAC3F3CAABA60EF76069431C5BB5032A /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 903D551334546D13D0D4703A8BD9C228 /* GoogleToolboxForMac-dummy.m */; };
+		FB4370B9B77CA2893660A52660C6FF56 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3613CE31DA11C464FC04134A3A43C1AA /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FF1E5EF4FFD54A47703415D417399CD7 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1863C0C5490EC5D25BA0680E915885C /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5C273803697790473934541DDC373CCE /* PBXContainerItemProxy */ = {
+		23F4764B1B5B7B6EE50208F9D84A9788 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD6C9FB6B052E1CF663F8A56041EA163;
+			remoteInfo = ObjectMapper;
+		};
+		C2BD66159EFF98F5B39A9C36977551BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -36,54 +69,90 @@
 
 /* Begin PBXFileReference section */
 		022C6B8DD4A6D00CF848BDD44D5CB5BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		038FD81EFB79783BC7887A7440198E95 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
 		03976E2D32B0E47A9B216390E9485994 /* Pods-SmartCamTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartCamTests-dummy.m"; sourceTree = "<group>"; };
 		06BC1F7287D7176EBF3854A93A456E9E /* Pods-SmartCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartCam.debug.xcconfig"; sourceTree = "<group>"; };
+		07EBD1DB2BB62141EF5E03FA080DFA6F /* Pods_SmartCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartCam.framework; path = "Pods-SmartCam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09696C2271CC47AAB2F07060967CB6B3 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		0D42A68F2D06BB3D57E7268A20AC8C20 /* Pods-SmartCamUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartCamUITests-resources.sh"; sourceTree = "<group>"; };
 		0F6CCEA16E139BE54179B178EF918229 /* Pods-SmartCamTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartCamTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1166696E26CABAAE7D33E8F2782E4EAD /* Pods-SmartCamUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartCamUITests-dummy.m"; sourceTree = "<group>"; };
+		11DBF9C8F7EB965565E661C8F72F269D /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
 		147E1A1B9F7741A8CC547834DA75D6E6 /* Pods-SmartCam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SmartCam.modulemap"; sourceTree = "<group>"; };
-		1988AAEAA95D090574159B2E1DB88516 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
-		19AA95E138099045A68E22B5B0EAFA4C /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		265BC960BD6B075EE36C1EF317263970 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		16688730E7641567A370581B36F21E5C /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		17FB0261CC03C99B41E0AA42891FBAC2 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		1C9D8E3B5626CEE2D0ECBB41F0B44EC6 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21680A22FE887B74A3AD945A5B09086B /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		24E2762DD360B24DEC8C141B4AD769FF /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		25520CD5FF4F1078796EFB41856E06DF /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		2A1335B3F56A97F1A71F6C7222E16392 /* Pods-SmartCamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartCamTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B8BA2F0EBA912612C916B133C5FC7D4 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
 		2BD15D054A08BAB9797517E2CDA73982 /* Pods-SmartCamTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartCamTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2F0A655EB9024FC461399E902DD358A4 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		31B19E6FFCA7A85867BC61343E6A14E3 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		3613CE31DA11C464FC04134A3A43C1AA /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
 		390DF1FCF221C9F0419F59978C404013 /* Pods-SmartCam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SmartCam-dummy.m"; sourceTree = "<group>"; };
-		3F83FDEFF72CEF9CE59B2F52F850F9C4 /* Pods_SmartCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartCamTests.framework; path = "Pods-SmartCamTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4134255C026EA6825C7815506057D064 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
-		4F03AE5A2F62FE3FC7CEFBD6B2856E85 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		3E911967BC52F14228C35B5F5C7D2FA2 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		44D77F57989A9E78756A36577132D58A /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		47DD36BFE7499FF785D68C24D93EF2D7 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
+		4F980806720EEC4A47A731B87C4C16B4 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		558F51845CCB736B12D3ED2CF10D48A8 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		5C10AFA847AAC434FFA126AC0D9362E6 /* Pods_SmartCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartCamUITests.framework; path = "Pods-SmartCamUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC9FE2558D4DDDB6C1A3BB5AE025CC3 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		5E0F82F481A3C3BCEF01DB6E73C91CD2 /* Pods-SmartCamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartCamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E74276895A1542D295291EF4064E033 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		661AD81A67004D0350979E7F447B3C72 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		6671CF6FC0516649AFC691166D91CB6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69214403545EDCCCCD5F8D4FC641DF4D /* Pods-SmartCamTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartCamTests-resources.sh"; sourceTree = "<group>"; };
 		69FDEC35F5E72FDAC5FD1337F54F2E79 /* Pods-SmartCam-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartCam-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BC1B1300536AA7104B0DADEFF40E75B /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
 		6BD82FF428E3B9BD1C66AD3B396AC59C /* Pods-SmartCamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartCamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7352FCC2D9EEED4B47DF1E925E808A39 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		74CBD4DB61D184B9B6B341D7CD673C1E /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		76BEFA7B25C9B116070156C3783F922A /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		7936F50435D9606E47D9866518B18A72 /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		7CE6890859B999C6CD27152F3BE6ABE9 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		7D99E21D5EB1A422A9EC8C22C2433BCD /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
 		802E9038B2D01859CDC2B8AC68B412E4 /* Pods-SmartCamUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SmartCamUITests.modulemap"; sourceTree = "<group>"; };
 		815A6E2942576C7FD5ED6B4057B89D5F /* Pods-SmartCam-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartCam-acknowledgements.markdown"; sourceTree = "<group>"; };
-		827E88F20E781098B06F2DB2A06A6CF9 /* Pods_SmartCamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartCamUITests.framework; path = "Pods-SmartCamUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8822B7474563581E8EEF4D8EE3528906 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		8960F1FDF1D274915194DA414B7C1999 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		8C7CD101223C051BEC9B3E42A4ED26BF /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
 		8C9765A0594D9B66097E706AD9BE6E9C /* Pods-SmartCam-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartCam-frameworks.sh"; sourceTree = "<group>"; };
+		8D03BA8D2FBE9498B10A8819E7880A4C /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		8FB5A670253624C1E24B3995B37B7FF2 /* Pods_SmartCamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartCamTests.framework; path = "Pods-SmartCamTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		903D551334546D13D0D4703A8BD9C228 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
 		91B54E1A9115FCE43ABDF7BFC356D196 /* Pods-SmartCamUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SmartCamUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E832AFC417A7E7A1F8332CC00503DD0 /* Pods-SmartCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartCam.release.xcconfig"; sourceTree = "<group>"; };
-		9FE5794BB10FECD3DA65B25B0E79384E /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		AC4F1AD7A2D53A83EE7B729989A48FCF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F50D6692BCC514DCFEA2DA290F73C90 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		A3BF9CC6A02267196F31434250AF829B /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30EF3C4BAE02C2F3C77BDF19518FFB8 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		B48F22F7C3E7793E7D5CFF996C6CBDFC /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		C1863C0C5490EC5D25BA0680E915885C /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
 		C1A41FD05A266BA8F8C4DCFA558B963D /* Pods-SmartCamUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartCamUITests-frameworks.sh"; sourceTree = "<group>"; };
-		C1EB450B5C08E7F68D19A28C61D085DF /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		C86FA97B3A8E0273CC194D6FEF99A989 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
-		C8AE523451A775A91C68C276E068B869 /* Pods_SmartCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SmartCam.framework; path = "Pods-SmartCam.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46971BF3B2A33CA81BA453BE5E4FCBF /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		C6EC91C9E5F0987D082A0C95892E905F /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		C7A96946FBBCF7321FAF8DE9DDDDA5C4 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		C7E63C3DFA002D54AD7F00F5525040EB /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDF1B1BF8A30E24719FD0F1592201F24 /* Pods-SmartCamTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartCamTests-umbrella.h"; sourceTree = "<group>"; };
-		D2F89ABD6004208281A66F928B881348 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		CE846E8C57EFA3BC7A75C7F3897A8C77 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		D2612A26CD26B6917FC3D1442AD09AE8 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		D336054EE3ED4F2F4D554F924161A05C /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		D52C8756D9E5C3790FA4DE625E0166C2 /* Pods-SmartCamTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SmartCamTests.modulemap"; sourceTree = "<group>"; };
-		D5380AA3B3379F11E57739C9FFC93AC1 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		D5CF655D9F55D37FC4312C6F8B2ECA1C /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C4EEDF7528688EA1CE3351A9085FE6 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		D6FC9E4D721B29D159AA98563A558185 /* Pods-SmartCamUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SmartCamUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D89DFC86ACF0F6F74DBB99688A5A1CA1 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		E0142297B3305011B4BEA961783D85B7 /* Pods-SmartCam-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartCam-resources.sh"; sourceTree = "<group>"; };
+		E09A4DFD92A9D23BB0F51CA8F153D087 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0B352B6A4CF4B20A157181DD5E0B8B3 /* Pods-SmartCamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SmartCamTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E0E7AEA79B27BB2372F07958787A39E3 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		E18E31068BE5D6DF0863BF452B82B31F /* Pods-SmartCam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartCam-umbrella.h"; sourceTree = "<group>"; };
 		E4D8AD17F37C2FA7C96752D06C4B6557 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9EE1BE34F346A132E73987DFA30272A /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		F001AFF973AE46F0E638E61B50393ED3 /* Pods-SmartCamTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SmartCamTests-frameworks.sh"; sourceTree = "<group>"; };
+		F1B01942D8D29E21895CB58A558220D3 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
 		F53EC14D2CFADE583405BCE983EA5EF7 /* Pods-SmartCamUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SmartCamUITests-umbrella.h"; sourceTree = "<group>"; };
+		F813FCC154F3D5CEA8955AA97D5F0672 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		FAC1CEA65A08860300F8020DCFBA4EF4 /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
 		FC81A745A864E4E34E2304CC6113E970 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,19 +165,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C41062595CC9A2807EB85AED58E4B0B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F571528DF298DA5D0DBD35F3AF22C82 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7126152DEE4B05FE8081D50691415F26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1458940EEBB6B12257DED5DDFECF6B3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0BAA5F10A35011B0414E573C417516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DAED6422428C654CA60E648413A05B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F4068871A73EB6FBE8042AF2063595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D7FFC8B873CCBBC84E0912840FC2FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,87 +218,156 @@
 			path = "Target Support Files/Pods-SmartCamTests";
 			sourceTree = "<group>";
 		};
-		09F2FD44F2E6572057E224C2C73827E2 /* Core */ = {
+		0801B840F404FE9322EA4206DD474277 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9FE5794BB10FECD3DA65B25B0E79384E /* Firebase.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		10E8685FAAD0C33170DE2D562037EF47 /* Defines */ = {
-			isa = PBXGroup;
-			children = (
-				E0E7AEA79B27BB2372F07958787A39E3 /* GTMDefines.h */,
-			);
-			name = Defines;
-			sourceTree = "<group>";
-		};
-		22630EE6BE14930BD68DB3A410A789E9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4F03AE5A2F62FE3FC7CEFBD6B2856E85 /* FirebaseDatabase.framework */,
+				5DC9FE2558D4DDDB6C1A3BB5AE025CC3 /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		39BEC71C8A5ED6635A51B3575CD0EDF5 /* Products */ = {
+		12402E03473D71C5EEDAE40FC03A2E00 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				D5CF655D9F55D37FC4312C6F8B2ECA1C /* GoogleToolboxForMac.framework */,
-				C8AE523451A775A91C68C276E068B869 /* Pods_SmartCam.framework */,
-				3F83FDEFF72CEF9CE59B2F52F850F9C4 /* Pods_SmartCamTests.framework */,
-				827E88F20E781098B06F2DB2A06A6CF9 /* Pods_SmartCamUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3F2EBD8B64B5E30E2186A6FBD94C29CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C1EB450B5C08E7F68D19A28C61D085DF /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BF342483D716869318887CB1B3AE375 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				68D9E6B7E092219B91D89716FD281070 /* Firebase */,
-				5B775B89F574A70CFB8D5F0DC67084A7 /* FirebaseAnalytics */,
-				99CECD2CF68A42C5FA7904C0696A3898 /* FirebaseCore */,
-				BB2D016D344B6687A72B1852DF2B72D1 /* FirebaseDatabase */,
-				8EA7290AE530824E4C7D00087C7D9AC8 /* FirebaseInstanceID */,
-				A787A628EADD646FA1A1D9C8E7A9248D /* GoogleToolboxForMac */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		5B775B89F574A70CFB8D5F0DC67084A7 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				3F2EBD8B64B5E30E2186A6FBD94C29CE /* Frameworks */,
-			);
-			name = FirebaseAnalytics;
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		68D9E6B7E092219B91D89716FD281070 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				09F2FD44F2E6572057E224C2C73827E2 /* Core */,
+				C123CBA540BE2FC8356C1801983BA6C9 /* Core */,
 			);
 			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
-		6B68D45812C2C46C6A1D821AC37D544B /* NSData+zlib */ = {
+		32BC0B73360999976676B8E88F882C2F /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				265BC960BD6B075EE36C1EF317263970 /* GTMNSData+zlib.h */,
-				8822B7474563581E8EEF4D8EE3528906 /* GTMNSData+zlib.m */,
+				3E911967BC52F14228C35B5F5C7D2FA2 /* CustomDateFormatTransform.swift */,
+				44D77F57989A9E78756A36577132D58A /* DataTransform.swift */,
+				7D99E21D5EB1A422A9EC8C22C2433BCD /* DateFormatterTransform.swift */,
+				8960F1FDF1D274915194DA414B7C1999 /* DateTransform.swift */,
+				D2612A26CD26B6917FC3D1442AD09AE8 /* DictionaryTransform.swift */,
+				7CE6890859B999C6CD27152F3BE6ABE9 /* EnumOperators.swift */,
+				21680A22FE887B74A3AD945A5B09086B /* EnumTransform.swift */,
+				7936F50435D9606E47D9866518B18A72 /* FromJSON.swift */,
+				11DBF9C8F7EB965565E661C8F72F269D /* HexColorTransform.swift */,
+				8D03BA8D2FBE9498B10A8819E7880A4C /* ImmutableMappable.swift */,
+				8C7CD101223C051BEC9B3E42A4ED26BF /* IntegerOperators.swift */,
+				09696C2271CC47AAB2F07060967CB6B3 /* ISO8601DateTransform.swift */,
+				C7A96946FBBCF7321FAF8DE9DDDDA5C4 /* Map.swift */,
+				47DD36BFE7499FF785D68C24D93EF2D7 /* MapError.swift */,
+				31B19E6FFCA7A85867BC61343E6A14E3 /* Mappable.swift */,
+				F1B01942D8D29E21895CB58A558220D3 /* Mapper.swift */,
+				6BC1B1300536AA7104B0DADEFF40E75B /* NSDecimalNumberTransform.swift */,
+				D89DFC86ACF0F6F74DBB99688A5A1CA1 /* Operators.swift */,
+				3613CE31DA11C464FC04134A3A43C1AA /* ToJSON.swift */,
+				CE846E8C57EFA3BC7A75C7F3897A8C77 /* TransformOf.swift */,
+				17FB0261CC03C99B41E0AA42891FBAC2 /* TransformOperators.swift */,
+				038FD81EFB79783BC7887A7440198E95 /* TransformType.swift */,
+				C1863C0C5490EC5D25BA0680E915885C /* URLTransform.swift */,
+				7717BBCC43D6EB6165E8C327848C3F12 /* Support Files */,
+			);
+			name = ObjectMapper;
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		3D5A0F0086CF8228EEA905801FD3F3DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12402E03473D71C5EEDAE40FC03A2E00 /* Firebase */,
+				6A271F03D6E4125B2DA83AC0D013ED33 /* FirebaseAnalytics */,
+				C13BBD83EAB110B24514377339362D17 /* FirebaseCore */,
+				F03A2C33EC3DC7426FDAB24C53B77AE0 /* FirebaseDatabase */,
+				A82960D102D6DBAFE589474D9D507DC7 /* FirebaseInstanceID */,
+				E00DCB969B42F3FCC96347A878452C83 /* GoogleMaps */,
+				9C15ACDB4930DBFF18928990D5476576 /* GooglePlaces */,
+				6D24D8E1056BD4C63D19BDDBCB3B7A04 /* GoogleToolboxForMac */,
+				32BC0B73360999976676B8E88F882C2F /* ObjectMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BCDBA335AFCC6729925BFA701DB8B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F813FCC154F3D5CEA8955AA97D5F0672 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EA38348EF5DD1FF7634BB8478851AFB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B48F22F7C3E7793E7D5CFF996C6CBDFC /* GoogleToolboxForMac.modulemap */,
+				76BEFA7B25C9B116070156C3783F922A /* GoogleToolboxForMac.xcconfig */,
+				903D551334546D13D0D4703A8BD9C228 /* GoogleToolboxForMac-dummy.m */,
+				B30EF3C4BAE02C2F3C77BDF19518FFB8 /* GoogleToolboxForMac-prefix.pch */,
+				FAC1CEA65A08860300F8020DCFBA4EF4 /* GoogleToolboxForMac-umbrella.h */,
+				6671CF6FC0516649AFC691166D91CB6A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		503DC35D3F2638439E1384091560959A /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				7352FCC2D9EEED4B47DF1E925E808A39 /* GTMNSData+zlib.h */,
+				2B8BA2F0EBA912612C916B133C5FC7D4 /* GTMNSData+zlib.m */,
 			);
 			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		544F5DCD70DD674CED307300B20B8223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C9D8E3B5626CEE2D0ECBB41F0B44EC6 /* GoogleToolboxForMac.framework */,
+				A3BF9CC6A02267196F31434250AF829B /* ObjectMapper.framework */,
+				07EBD1DB2BB62141EF5E03FA080DFA6F /* Pods_SmartCam.framework */,
+				8FB5A670253624C1E24B3995B37B7FF2 /* Pods_SmartCamTests.framework */,
+				5C10AFA847AAC434FFA126AC0D9362E6 /* Pods_SmartCamUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E1448FD3DBDDAFFED0432D704BCC0FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C7E63C3DFA002D54AD7F00F5525040EB /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5EB0D70B68D32C676A03C226F849C9D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F0A655EB9024FC461399E902DD358A4 /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A271F03D6E4125B2DA83AC0D013ED33 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F5ADA2F9CE807DC61104C344C442C412 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		6D24D8E1056BD4C63D19BDDBCB3B7A04 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				9557FBE8593ECFDB554D43C82B831EAC /* Defines */,
+				503DC35D3F2638439E1384091560959A /* NSData+zlib */,
+				4EA38348EF5DD1FF7634BB8478851AFB /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		6EF4536AA45689237A2A712125CD55EC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7EBF394D929C4861F0EC81F1BB30BBE1 /* Frameworks */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -232,15 +378,37 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7717BBCC43D6EB6165E8C327848C3F12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E09A4DFD92A9D23BB0F51CA8F153D087 /* Info.plist */,
+				74CBD4DB61D184B9B6B341D7CD673C1E /* ObjectMapper.modulemap */,
+				661AD81A67004D0350979E7F447B3C72 /* ObjectMapper.xcconfig */,
+				4F980806720EEC4A47A731B87C4C16B4 /* ObjectMapper-dummy.m */,
+				9F50D6692BCC514DCFEA2DA290F73C90 /* ObjectMapper-prefix.pch */,
+				24E2762DD360B24DEC8C141B4AD769FF /* ObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				4BF342483D716869318887CB1B3AE375 /* Pods */,
-				39BEC71C8A5ED6635A51B3575CD0EDF5 /* Products */,
+				3D5A0F0086CF8228EEA905801FD3F3DF /* Pods */,
+				544F5DCD70DD674CED307300B20B8223 /* Products */,
 				9BEEB116B18AA24A0E20396DCFCBDF4B /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7EBF394D929C4861F0EC81F1BB30BBE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25520CD5FF4F1078796EFB41856E06DF /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8058335697389F11434F0A8DA0D4A68D /* Pods-SmartCamUITests */ = {
@@ -261,22 +429,21 @@
 			path = "Target Support Files/Pods-SmartCamUITests";
 			sourceTree = "<group>";
 		};
-		8EA7290AE530824E4C7D00087C7D9AC8 /* FirebaseInstanceID */ = {
+		91CC76A72A9A006B912D86394BA65B50 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				F0F116DE54A3573FC3A328A5E6A5821D /* Frameworks */,
+				D9E54788E92CD3B7501716A7A4602FAE /* Frameworks */,
+				5E1448FD3DBDDAFFED0432D704BCC0FA /* Resources */,
 			);
-			name = FirebaseInstanceID;
-			path = FirebaseInstanceID;
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		99CECD2CF68A42C5FA7904C0696A3898 /* FirebaseCore */ = {
+		9557FBE8593ECFDB554D43C82B831EAC /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				AAA364C55C635CE93C4DFED4A993D325 /* Frameworks */,
+				5E74276895A1542D295291EF4064E033 /* GTMDefines.h */,
 			);
-			name = FirebaseCore;
-			path = FirebaseCore;
+			name = Defines;
 			sourceTree = "<group>";
 		};
 		9BEEB116B18AA24A0E20396DCFCBDF4B /* Targets Support Files */ = {
@@ -289,46 +456,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A787A628EADD646FA1A1D9C8E7A9248D /* GoogleToolboxForMac */ = {
+		9C15ACDB4930DBFF18928990D5476576 /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				10E8685FAAD0C33170DE2D562037EF47 /* Defines */,
-				6B68D45812C2C46C6A1D821AC37D544B /* NSData+zlib */,
-				A96AF31933F6210AC40D20C134635815 /* Support Files */,
+				4BCDBA335AFCC6729925BFA701DB8B39 /* Frameworks */,
+				F88918794171847A68368B92E21149E1 /* Resources */,
 			);
-			name = GoogleToolboxForMac;
-			path = GoogleToolboxForMac;
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
-		A96AF31933F6210AC40D20C134635815 /* Support Files */ = {
+		A82960D102D6DBAFE589474D9D507DC7 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				C86FA97B3A8E0273CC194D6FEF99A989 /* GoogleToolboxForMac.modulemap */,
-				19AA95E138099045A68E22B5B0EAFA4C /* GoogleToolboxForMac.xcconfig */,
-				D2F89ABD6004208281A66F928B881348 /* GoogleToolboxForMac-dummy.m */,
-				4134255C026EA6825C7815506057D064 /* GoogleToolboxForMac-prefix.pch */,
-				1988AAEAA95D090574159B2E1DB88516 /* GoogleToolboxForMac-umbrella.h */,
-				AC4F1AD7A2D53A83EE7B729989A48FCF /* Info.plist */,
+				CFBBFAB5039BBF3C613F686D303DBB45 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
-			sourceTree = "<group>";
-		};
-		AAA364C55C635CE93C4DFED4A993D325 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D5380AA3B3379F11E57739C9FFC93AC1 /* FirebaseCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BB2D016D344B6687A72B1852DF2B72D1 /* FirebaseDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				22630EE6BE14930BD68DB3A410A789E9 /* Frameworks */,
-			);
-			name = FirebaseDatabase;
-			path = FirebaseDatabase;
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -337,6 +481,50 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C123CBA540BE2FC8356C1801983BA6C9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				16688730E7641567A370581B36F21E5C /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C13BBD83EAB110B24514377339362D17 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				5EB0D70B68D32C676A03C226F849C9D6 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		CFBBFAB5039BBF3C613F686D303DBB45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				558F51845CCB736B12D3ED2CF10D48A8 /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9E54788E92CD3B7501716A7A4602FAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5C4EEDF7528688EA1CE3351A9085FE6 /* GoogleMaps.framework */,
+				D336054EE3ED4F2F4D554F924161A05C /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E00DCB969B42F3FCC96347A878452C83 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				6EF4536AA45689237A2A712125CD55EC /* Base */,
+				91CC76A72A9A006B912D86394BA65B50 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
 		E72521AEC7B78069DC1530B850058C1C /* Pods-SmartCam */ = {
@@ -357,12 +545,29 @@
 			path = "Target Support Files/Pods-SmartCam";
 			sourceTree = "<group>";
 		};
-		F0F116DE54A3573FC3A328A5E6A5821D /* Frameworks */ = {
+		F03A2C33EC3DC7426FDAB24C53B77AE0 /* FirebaseDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				E9EE1BE34F346A132E73987DFA30272A /* FirebaseInstanceID.framework */,
+				0801B840F404FE9322EA4206DD474277 /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		F5ADA2F9CE807DC61104C344C442C412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C46971BF3B2A33CA81BA453BE5E4FCBF /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F88918794171847A68368B92E21149E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6EC91C9E5F0987D082A0C95892E905F /* GooglePlaces.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,11 +589,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9E6FA29E2BDCE8265E771DC64E76DF31 /* Headers */ = {
+		CD3F7550E80E1C13378B0F1A47E6C065 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BED1DBE97F9969F95CB954CF3A37250E /* Pods-SmartCam-umbrella.h in Headers */,
+				61099F86469824ED2966FD4CDE3B4B2B /* Pods-SmartCam-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57C9456EA5FB7C7D8FC40BACD0F5369 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A128DBCF691E0F4D2AC3EEA36F7BD562 /* ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +632,26 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = D5CF655D9F55D37FC4312C6F8B2ECA1C /* GoogleToolboxForMac.framework */;
+			productReference = 1C9D8E3B5626CEE2D0ECBB41F0B44EC6 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		090C69A57AD0BA1A593BE272C38441A4 /* Pods-SmartCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035BA35BFDFF65C060C11CE39BE55CCB /* Build configuration list for PBXNativeTarget "Pods-SmartCam" */;
+			buildPhases = (
+				D2F1DE3C55FDBC455530E7EB0DFDFFE6 /* Sources */,
+				BC0BAA5F10A35011B0414E573C417516 /* Frameworks */,
+				CD3F7550E80E1C13378B0F1A47E6C065 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				256CA1B92885776245C804B71634FD88 /* PBXTargetDependency */,
+				264D63857C9F146CC9267A8F4DD3606E /* PBXTargetDependency */,
+			);
+			name = "Pods-SmartCam";
+			productName = "Pods-SmartCam";
+			productReference = 07EBD1DB2BB62141EF5E03FA080DFA6F /* Pods_SmartCam.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		32468F70A75FDD050F01ABED65540776 /* Pods-SmartCamUITests */ = {
@@ -436,25 +668,24 @@
 			);
 			name = "Pods-SmartCamUITests";
 			productName = "Pods-SmartCamUITests";
-			productReference = 827E88F20E781098B06F2DB2A06A6CF9 /* Pods_SmartCamUITests.framework */;
+			productReference = 5C10AFA847AAC434FFA126AC0D9362E6 /* Pods_SmartCamUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6D460C24D31987070F1125D728AE4A5B /* Pods-SmartCam */ = {
+		CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3C4F4BA4861E7142DC017580E6354179 /* Build configuration list for PBXNativeTarget "Pods-SmartCam" */;
+			buildConfigurationList = 23CFD86DE455F2B998EC09D589DA285D /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
 			buildPhases = (
-				74E58C18410033B3B353B04BD5E7CDE0 /* Sources */,
-				4C41062595CC9A2807EB85AED58E4B0B /* Frameworks */,
-				9E6FA29E2BDCE8265E771DC64E76DF31 /* Headers */,
+				105949C4D593C142A371ED3B9C1D19FC /* Sources */,
+				C4F4068871A73EB6FBE8042AF2063595 /* Frameworks */,
+				F57C9456EA5FB7C7D8FC40BACD0F5369 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BD4D2E0AB5C232FE92968A197EE07920 /* PBXTargetDependency */,
 			);
-			name = "Pods-SmartCam";
-			productName = "Pods-SmartCam";
-			productReference = C8AE523451A775A91C68C276E068B869 /* Pods_SmartCam.framework */;
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = A3BF9CC6A02267196F31434250AF829B /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F0F49F6C85C5FB1B61BC433B4A8807D6 /* Pods-SmartCamTests */ = {
@@ -471,7 +702,7 @@
 			);
 			name = "Pods-SmartCamTests";
 			productName = "Pods-SmartCamTests";
-			productReference = 3F83FDEFF72CEF9CE59B2F52F850F9C4 /* Pods_SmartCamTests.framework */;
+			productReference = 8FB5A670253624C1E24B3995B37B7FF2 /* Pods_SmartCamTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -491,12 +722,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 39BEC71C8A5ED6635A51B3575CD0EDF5 /* Products */;
+			productRefGroup = 544F5DCD70DD674CED307300B20B8223 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */,
-				6D460C24D31987070F1125D728AE4A5B /* Pods-SmartCam */,
+				CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */,
+				090C69A57AD0BA1A593BE272C38441A4 /* Pods-SmartCam */,
 				F0F49F6C85C5FB1B61BC433B4A8807D6 /* Pods-SmartCamTests */,
 				32468F70A75FDD050F01ABED65540776 /* Pods-SmartCamUITests */,
 			);
@@ -504,6 +736,37 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		105949C4D593C142A371ED3B9C1D19FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0BE6FD4C256E93CBCB31150A1A489EB /* CustomDateFormatTransform.swift in Sources */,
+				DB16BA7FF7677EB77FF201C169EBA7F5 /* DataTransform.swift in Sources */,
+				04A9EAF23667AB20F1856B4C127E2CCB /* DateFormatterTransform.swift in Sources */,
+				A1B1494B96861D28886774A62ADF12B4 /* DateTransform.swift in Sources */,
+				80DD3BF9141268B7FD837C9EAFD1207B /* DictionaryTransform.swift in Sources */,
+				64C08047F018142FFAA2D6A8EAD6CEF0 /* EnumOperators.swift in Sources */,
+				A4C95C686C63C3BE2768F6ED69C9BB9B /* EnumTransform.swift in Sources */,
+				554024125BDDD8CFE0FA9F47CF450D38 /* FromJSON.swift in Sources */,
+				35BA53BE44A5FAEE1FB680E12A243846 /* HexColorTransform.swift in Sources */,
+				DD24CA00C4CA98203B6B61771D605BF7 /* ImmutableMappable.swift in Sources */,
+				AD31AD8DB949DCA3E7FD8305331A74FA /* IntegerOperators.swift in Sources */,
+				23E9973F4DC00EEF5FFFC53B5C4F9CCE /* ISO8601DateTransform.swift in Sources */,
+				F9EB49D9D6AC0EA662DEE43EAF966B5A /* Map.swift in Sources */,
+				6D4763209A3F094E8162FD1A86751B8D /* MapError.swift in Sources */,
+				714BD67B41EEBEAC20CB958A882DE0AD /* Mappable.swift in Sources */,
+				03EE30A3FFD7BF856C008B3DC8139F07 /* Mapper.swift in Sources */,
+				4A686B24A6E57B30E0813CC86B2BCEC4 /* NSDecimalNumberTransform.swift in Sources */,
+				DA8070AA9696822F0242CC298668AFF7 /* ObjectMapper-dummy.m in Sources */,
+				DF10B74DAD2CFA3392369651FA4E1388 /* Operators.swift in Sources */,
+				FB4370B9B77CA2893660A52660C6FF56 /* ToJSON.swift in Sources */,
+				82CC59765FCF6BB742B83109450663A7 /* TransformOf.swift in Sources */,
+				9EA52AEB7278984474CC743711FCB699 /* TransformOperators.swift in Sources */,
+				E0CBFD38A5408B925188989A41F3CB94 /* TransformType.swift in Sources */,
+				FF1E5EF4FFD54A47703415D417399CD7 /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4134BC5EFBE56018E031348AAB3A57A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -521,14 +784,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74E58C18410033B3B353B04BD5E7CDE0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AB222617458CF2ABDD5CDCCB7330F79E /* Pods-SmartCam-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8580EE84E673F236D18AC5149D8DD567 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,14 +792,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2F1DE3C55FDBC455530E7EB0DFDFFE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB25C008983EC07CDBF46FC40B984BE6 /* Pods-SmartCam-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BD4D2E0AB5C232FE92968A197EE07920 /* PBXTargetDependency */ = {
+		256CA1B92885776245C804B71634FD88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
 			target = 00103D6C821BE85971C563025527BA5D /* GoogleToolboxForMac */;
-			targetProxy = 5C273803697790473934541DDC373CCE /* PBXContainerItemProxy */;
+			targetProxy = C2BD66159EFF98F5B39A9C36977551BC /* PBXContainerItemProxy */;
+		};
+		264D63857C9F146CC9267A8F4DD3606E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = CD6C9FB6B052E1CF663F8A56041EA163 /* ObjectMapper */;
+			targetProxy = 23F4764B1B5B7B6EE50208F9D84A9788 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -654,41 +923,6 @@
 			};
 			name = Debug;
 		};
-		4C3E361F8C387CBCD903D6DEA96609CF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E832AFC417A7E7A1F8332CC00503DD0 /* Pods-SmartCam.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartCam/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartCam/Pods-SmartCam.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SmartCam;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -729,40 +963,37 @@
 			};
 			name = Release;
 		};
-		710A1527B6B042A3E67F4E11AD2FA4C1 /* Debug */ = {
+		785383AF669DC75C71C158B7D6B1EAC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06BC1F7287D7176EBF3854A93A456E9E /* Pods-SmartCam.debug.xcconfig */;
+			baseConfigurationReference = 661AD81A67004D0350979E7F447B3C72 /* ObjectMapper.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SmartCam/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SmartCam/Pods-SmartCam.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SmartCam;
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		952C49D9C02398D2056CABB0A12AAB06 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -799,9 +1030,77 @@
 			};
 			name = Release;
 		};
+		976A02B39DD5212632CD2B530124018F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661AD81A67004D0350979E7F447B3C72 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7F7645444BAA162BB6F81FE935923C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E832AFC417A7E7A1F8332CC00503DD0 /* Pods-SmartCam.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartCam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartCam/Pods-SmartCam.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		D60CD877A708870E2BE96B83BA32F883 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19AA95E138099045A68E22B5B0EAFA4C /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 76BEFA7B25C9B116070156C3783F922A /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -875,9 +1174,45 @@
 			};
 			name = Debug;
 		};
+		EE7DDA59ED8A6D5BEFD05EBC20ACE67A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BC1F7287D7176EBF3854A93A456E9E /* Pods-SmartCam.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SmartCam/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SmartCam/Pods-SmartCam.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SmartCam;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		F066921CBDBDB5F45795E50FBC5AC972 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19AA95E138099045A68E22B5B0EAFA4C /* GoogleToolboxForMac.xcconfig */;
+			baseConfigurationReference = 76BEFA7B25C9B116070156C3783F922A /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -910,6 +1245,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		035BA35BFDFF65C060C11CE39BE55CCB /* Build configuration list for PBXNativeTarget "Pods-SmartCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE7DDA59ED8A6D5BEFD05EBC20ACE67A /* Debug */,
+				C7F7645444BAA162BB6F81FE935923C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		23AABEDE783D67E885B073712C46BB0D /* Build configuration list for PBXNativeTarget "Pods-SmartCamUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -919,20 +1263,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		23CFD86DE455F2B998EC09D589DA285D /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				976A02B39DD5212632CD2B530124018F /* Debug */,
+				785383AF669DC75C71C158B7D6B1EAC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
 				673254EEAF0B5BF4596080C749645884 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C4F4BA4861E7142DC017580E6354179 /* Build configuration list for PBXNativeTarget "Pods-SmartCam" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				710A1527B6B042A3E67F4E11AD2FA4C1 /* Debug */,
-				4C3E361F8C387CBCD903D6DEA96609CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

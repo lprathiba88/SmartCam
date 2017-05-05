@@ -15,8 +15,6 @@ class TripDetailsViewController: UIViewController {
 
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var tripName: UILabel!
-    @IBOutlet weak var startLocation: UILabel!
-    @IBOutlet weak var stopLocation: UILabel!
     @IBOutlet weak var startTime: UILabel!
     @IBOutlet weak var stopTime: UILabel!
     @IBOutlet weak var averageSpeed: UILabel!
@@ -37,6 +35,19 @@ class TripDetailsViewController: UIViewController {
             present(playerViewCOntroller, animated: true, completion: {
                 playerViewCOntroller.player!.play()
             })
+        }
+    }
+    
+    @IBAction func viewMap(_ sender: Any) {
+        performSegue(withIdentifier: "toMapView", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? MapViewController {
+            guard let details = tripDetails else { return }
+            let locationDetails = details.tripDetails
+            destination.origin = "\(locationDetails[0].latitude), \(locationDetails[0].longitude)"
+            destination.destination = "\(locationDetails[locationDetails.count - 1].latitude), \(locationDetails[locationDetails.count - 1].longitude)"            
         }
     }
     
@@ -68,11 +79,8 @@ class TripDetailsViewController: UIViewController {
             self.playButton.isHidden = true
         }
         
-        
         let locationDetails = details.tripDetails
         
-        self.startLocation.text = "\(locationDetails[0].latitude), \(locationDetails[0].longitude)"
-        self.stopLocation.text = "\(locationDetails[locationDetails.count - 1].latitude), \(locationDetails[locationDetails.count - 1].longitude)"
         self.startTime.text = locationDetails[0].dateAndTime.components(separatedBy: "+0000").first!
         self.stopTime.text = locationDetails[locationDetails.count - 1].dateAndTime.components(separatedBy: "+0000").first!
         

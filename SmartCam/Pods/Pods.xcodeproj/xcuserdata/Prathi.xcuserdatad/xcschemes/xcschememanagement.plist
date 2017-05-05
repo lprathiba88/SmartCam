@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SmartCam.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>090C69A57AD0BA1A593BE272C38441A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>32468F70A75FDD050F01ABED65540776</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D460C24D31987070F1125D728AE4A5B</key>
+		<key>CD6C9FB6B052E1CF663F8A56041EA163</key>
 		<dict>
 			<key>primary</key>
 			<true/>
