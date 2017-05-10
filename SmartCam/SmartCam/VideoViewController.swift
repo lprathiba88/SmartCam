@@ -30,6 +30,8 @@ class VideoViewController: UIViewController {
     var urlBuffer = RingBuffer<URL>(count: 15)
     var count = 0
     var videoURL: [String] = []
+    var eventLatitude: String?
+    var eventLongitude: String?
     
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -69,12 +71,17 @@ class VideoViewController: UIViewController {
         super.viewWillDisappear(animated)
        
         let name = "trip-\(getDateTime())" + UUID().uuidString
-        let user = UserDetails(name, videoURL , LocationDetails.arrayOfData)
+        var eventLocation = [String]()
+        if let latitude = eventLatitude, let longitude = eventLongitude {
+            eventLocation.append("\(latitude), \(longitude)")
+        }
+        let user = UserDetails(name, videoURL, LocationDetails.arrayOfData)
         
         //add trip to Firebase
         var finalDict:[String: Any] = [:]
         finalDict[UserDetails.UserKeys.deviceID] = UserDetails.devideId
         finalDict[UserDetails.UserKeys.events] = user.videoURL
+        //finalDict[UserDetails.UserKeys.eventLocation] = user.eventLocation
         finalDict[UserDetails.UserKeys.tripDetails] = user.encode()
         
         Firebase.shared.addTripToFirebase(user.tripName, finalDict)
@@ -227,6 +234,12 @@ class VideoViewController: UIViewController {
     
     func saveIncident() {
         print("In saveIncident method")
+        
+        if !LocationDetails.arrayOfData.isEmpty {
+            eventLatitude = LocationDetails.arrayOfData.last!.latitude
+            eventLongitude = LocationDetails.arrayOfData.last!.longitude
+        }
+        
         // start timer for 30 sec after the tap gesture
         if tapTimer != nil {
             tapTimer.invalidate()
@@ -465,10 +478,12 @@ extension VideoViewController: CLLocationManagerDelegate {
         let speed = Double(locations.first!.speed)
         let dateTime = locations.first!.timestamp.description
         
-        print("latitude: \(latitude) \n longitude: \(longitude) \n speed: \(speed) \n date&time: \(dateTime)")
+        //print("latitude: \(latitude) \n longitude: \(longitude) \n speed: \(speed) \n date&time: \(dateTime)")
         
         let locationDetails = LocationDetails(latitude, longitude, speed, dateTime)
         LocationDetails.arrayOfData.append(locationDetails)
+        
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {

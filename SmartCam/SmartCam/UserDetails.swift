@@ -6,20 +6,21 @@
 //  Copyright © 2017 Prathiba Lingappan. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class UserDetails {
     
-    static var devideId = "device_1"
+    static var devideId = UIDevice.current.identifierForVendor?.uuidString
     let tripName: String
     let videoURL: [String]
+    //let eventLocation: [String]
     let tripDetails: [LocationDetails]
     
     init(_ tripName: String, _ videoURL: [String], _ details: [LocationDetails]) {
         self.tripName = tripName
         self.videoURL = videoURL
+        //self.eventLocation = eventLocation
         self.tripDetails = details
-        //self.devideId = "device_1"
     }
     
     func encode() -> [[String: Any]] {
@@ -30,6 +31,7 @@ class UserDetails {
         static let deviceID = "deviceID"
         static let tripDetails = "tripDetails"
         static let events = "events"
+        //static let eventLocation = "eventLocation"
         static let tripName = "tripName"
     }
     

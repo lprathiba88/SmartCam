@@ -23,16 +23,19 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         
         if UserDetails.tripsArray.count == 0 {
-            Firebase.shared.getTripFromFirebase(UserDetails.devideId) { (trips) in
-                guard let pastTrips = trips else {
-                    print("No trips in Firebase")
-                    return
+            if let deviceId = UserDetails.devideId {
+                Firebase.shared.getTripFromFirebase(deviceId) { (trips) in
+                    guard let pastTrips = trips else {
+                        print("No trips in Firebase")
+                        return
+                    }
+                    self.tripsArray = pastTrips
+                    UserDetails.tripsArray = pastTrips
+                    DispatchQueue.main.async {
+                        self.tripsTableView.reloadData()
+                    }
                 }
-                self.tripsArray = pastTrips
-                UserDetails.tripsArray = pastTrips
-                DispatchQueue.main.async {
-                    self.tripsTableView.reloadData()
-                }
+ 
             }
         }
         else {
@@ -55,12 +58,12 @@ class TripsViewController: UIViewController, UITableViewDataSource, UITableViewD
         guard let cell = tripsTableView.dequeueReusableCell(withIdentifier: "tripsCell", for: indexPath) as? TripsTableViewCell else {
             return UITableViewCell()
         }
-        
+
         let tripName = tripsArray[indexPath.row]
-                            .tripName
-                            .components(separatedBy: "PM")
-                            .first!
-                            .appending("PM")
+            .tripName
+            .components(separatedBy:"M ")
+            .first!
+            .appending("M ")
         
         cell.tripName.text = tripName
         

@@ -32,13 +32,14 @@ class Firebase {
             guard let deviceIDInString = newDeviceID as? String else {return}
             
             if deviceIDInString ==  currentDeviceId{
-                let tripDetails = (trip[UserDetails.UserKeys.tripDetails]) as? [[String: Any]]
+                let tripDetails = (trip[UserDetails.UserKeys.tripDetails]) as? [[String: Any]] ?? []
                 let events = (trip[UserDetails.UserKeys.events]) as? [String] ?? []
+                //let eventLocation = (trip[UserDetails.UserKeys.eventLocation]) as? [String] ?? []
                 let tripName = snapshot.key
                 
                 //Creating LocationDetails Instance for each LocationDetails dictionary in newTripDetails array
                 var locationArray = [LocationDetails]()
-                for i in tripDetails! {
+                for i in tripDetails {
                     guard let latitude = i[LocationDetails.LocationKeys.latitude] as? String else {return}
                     guard let longitude = i[LocationDetails.LocationKeys.longitude] as? String else {return}
                     guard let speed = i[LocationDetails.LocationKeys.speed] as? Double else {return}

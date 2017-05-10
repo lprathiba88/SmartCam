@@ -19,6 +19,7 @@ class TripDetailsViewController: UIViewController {
     @IBOutlet weak var stopTime: UILabel!
     @IBOutlet weak var averageSpeed: UILabel!
     @IBOutlet weak var eventThumbnail: UIImageView!
+    @IBOutlet weak var eventsLabel: UILabel!
     
     var tripDetails: UserDetails?
     var videoAsset: AVAsset?
@@ -29,11 +30,11 @@ class TripDetailsViewController: UIViewController {
             let player = AVPlayer(playerItem: playerItem)
             player.allowsExternalPlayback = false
             
-            let playerViewCOntroller = AVPlayerViewController()
-            playerViewCOntroller.player = player
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
             
-            present(playerViewCOntroller, animated: true, completion: {
-                playerViewCOntroller.player!.play()
+            present(playerViewController, animated: true, completion: {
+                playerViewController.player!.play()
             })
         }
     }
@@ -44,10 +45,13 @@ class TripDetailsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? MapViewController {
+           
             guard let details = tripDetails else { return }
             let locationDetails = details.tripDetails
+           
             destination.origin = "\(locationDetails[0].latitude), \(locationDetails[0].longitude)"
-            destination.destination = "\(locationDetails[locationDetails.count - 1].latitude), \(locationDetails[locationDetails.count - 1].longitude)"            
+            destination.destination = "\(locationDetails[locationDetails.count - 1].latitude), \(locationDetails[locationDetails.count - 1].longitude)"
+             //destination.waypointsArray = details.eventLocation
         }
     }
     
@@ -67,6 +71,7 @@ class TripDetailsViewController: UIViewController {
         
         if details.videoURL.count > 0 {
             let videoLocalId = details.videoURL[0]
+            self.eventsLabel.isHidden = false
             self.playButton.isHidden = false
             loadMovie(for: videoLocalId) { (asset) in
                 if let asset = asset {
@@ -76,6 +81,7 @@ class TripDetailsViewController: UIViewController {
             }
         }
         else {
+            self.eventsLabel.isHidden = true
             self.playButton.isHidden = true
         }
         

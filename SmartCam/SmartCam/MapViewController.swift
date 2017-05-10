@@ -43,24 +43,24 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         
-        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 48.857165, longitude: 2.354613, zoom: 8.0)
+        let camera: GMSCameraPosition = GMSCameraPosition.camera(withLatitude: 37.7909131647575, longitude: -122.400455604569, zoom: 8.0)
         viewMap.camera = camera
         viewMap.delegate = self
         
-        viewMap.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.new, context: nil)
+//        viewMap.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.new, context: nil)
         
         createRoute()
     }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if !didFindMyLocation {
-            let myLocation = change?[NSKeyValueChangeKey.newKey] as! CLLocation
-            viewMap.camera = GMSCameraPosition.camera(withTarget: myLocation.coordinate, zoom: 10.0)
-            viewMap.settings.myLocationButton = true
-            
-            didFindMyLocation = true
-        }
-    }
+//    
+//    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//        if !didFindMyLocation {
+//            let myLocation = change?[NSKeyValueChangeKey.newKey] as! CLLocation
+//            viewMap.camera = GMSCameraPosition.camera(withTarget: myLocation.coordinate, zoom: 10.0)
+//            viewMap.settings.myLocationButton = true
+//            
+//            didFindMyLocation = true
+//        }
+//    }
     
     
     // MARK: Custom method implementation
@@ -69,11 +69,16 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         
         if (self.routePolyline) != nil {
             self.clearRoute()
-            self.waypointsArray.removeAll(keepingCapacity: false)
+            //self.waypointsArray.removeAll(keepingCapacity: false)
         }
         
         if let origin = self.origin, let destination = self.destination {
-            self.mapTasks.getDirections(origin, destination: destination, waypoints: nil,completionHandler: { (status, success) -> Void in
+            
+            print("origin : \(origin)")
+            print("destination : \(destination)")
+            //print("waypointsArray: \(waypointsArray)")
+            
+            self.mapTasks.getDirections(origin, destination: destination, waypoints: waypointsArray,completionHandler: { (status, success) -> Void in
                 if success {
                     self.configureMapAndMarkersForRoute()
                     self.drawRoute()

@@ -356,6 +356,7 @@
                     <connections>
                         <outlet property="averageSpeed" destination="lo3-Dv-u1a" id="hSu-Sz-mJU"/>
                         <outlet property="eventThumbnail" destination="YUQ-Q8-Wpr" id="CSB-Zn-JMh"/>
+                        <outlet property="eventsLabel" destination="nji-WZ-5FC" id="ae9-wM-hLn"/>
                         <outlet property="playButton" destination="AJG-HB-SgE" id="6lf-h6-5Ls"/>
                         <outlet property="startTime" destination="g3N-Hj-sDm" id="XPc-YY-WVK"/>
                         <outlet property="stopTime" destination="TrF-Cs-7Qp" id="1bZ-Fy-Md2"/>

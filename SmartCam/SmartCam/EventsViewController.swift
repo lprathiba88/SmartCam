@@ -23,17 +23,20 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
 
         if UserDetails.tripsArray.count == 0 {
-            Firebase.shared.getTripFromFirebase(UserDetails.devideId) { (trips) in
-                guard let pastTrips = trips else {
-                    print("No trips in Firebase")
-                    return
-                }
-                UserDetails.tripsArray = pastTrips
-                self.getTrips()
-                DispatchQueue.main.async {
-                    self.eventsTableView.reloadData()
+            if let deviceId = UserDetails.devideId {
+                Firebase.shared.getTripFromFirebase(deviceId) { (trips) in
+                    guard let pastTrips = trips else {
+                        print("No trips in Firebase")
+                        return
+                    }
+                    UserDetails.tripsArray = pastTrips
+                    self.getTrips()
+                    DispatchQueue.main.async {
+                        self.eventsTableView.reloadData()
+                    }
                 }
             }
+            
         }
         else {
             getTrips()
