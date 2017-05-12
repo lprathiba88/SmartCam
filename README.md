@@ -1,23 +1,22 @@
 # SmartCam
 
 ### App Images: 
-![Alt text](ScreenShots/IMG_4931.PNG)  ![Alt text](ScreenShots/IMG_4934.PNG)  ![Alt text](ScreenShots/IMG_4932.PNG)  ![Alt text](ScreenShots/IMG_4933.PNG)  ![Alt text](ScreenShots/IMG_4935.PNG)
+![Alt text](ScreenShots/IMG_4931.PNG)     ![Alt text](ScreenShots/IMG_4934.PNG)     ![Alt text](ScreenShots/IMG_4932.PNG)     ![Alt text](ScreenShots/IMG_4933.PNG)     ![Alt text](ScreenShots/IMG_4935.PNG)
 
 ### Purpose: 
 Help the user to keep a record of sudden, unexpected events on road.
 
-### Major Features
+### Core Features
 + User does not need to create an account to use the app.
 + Creates and saves a video file with few seconds before and after any event that happens.
 + Saves the GPS coordinates, timestamp, speed and other data for the whole trip. 
 + User is able to playback all the recorded events from all his trips and view other metrics also for all his trips. 
 
-### Minor Features
-+ App has a timer to keep track of the recording.
-
-### Issues
-+ Route display on map is sometimes incorrect
-+ Time data saved to Firebase for a trip is incorrect
+### Technologies Used
++ iOS frameworks 
+    - For video recoding and playback - AVFoundation, AVKit, Photos
+    - For location tracking - Core Location
++ Third party APIs/SDKs - Google Maps SDK, Firebase Database
 
 ### Additional Features To Be Implemented
 + Ability to save multiple events on a trip.
