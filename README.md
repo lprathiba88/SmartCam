@@ -1,7 +1,7 @@
 # SmartCam
 
-### App Icon: 
-![Alt text](SmartCam/Assets.xcassets/AppIcon.appiconset/News_Icon-20@3x.png)
+### App Images: 
+![Alt text](Users/prathi/Documents/iOS_Related/Presentations/SmartCam/ScreenShots/IMG_4935.PNG)
 
 ### Purpose: 
 Help the user to keep a record of sudden, unexpected events on road.
