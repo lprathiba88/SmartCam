@@ -1,8 +1,5 @@
 # SmartCam
 
-### Name: 
-SmartCam
-
 ### App Icon: 
 ![Alt text](SmartCam/Assets.xcassets/AppIcon.appiconset/News_Icon-20@3x.png)
 
