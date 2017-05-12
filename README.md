@@ -1,28 +1,28 @@
 # SmartCam
 
-###Name: 
+### Name: 
 SmartCam
 
-###App Icon: 
+### App Icon: 
 ![Alt text](SmartCam/Assets.xcassets/AppIcon.appiconset/News_Icon-20@3x.png)
 
-###Purpose: 
+### Purpose: 
 Help the user to keep a record of sudden, unexpected events on road.
 
-###Major Features
+### Major Features
 + User does not need to create an account to use the app.
 + Creates and saves a video file with few seconds before and after any event that happens.
 + Saves the GPS coordinates, timestamp, speed and other data for the whole trip. 
 + User is able to playback all the recorded events from all his trips and view other metrics also for all his trips. 
 
-###Minor Features
+### Minor Features
 + App has a timer to keep track of the recording.
 
-###Issues
+### Issues
 + Route display on map is sometimes incorrect
 + Time data saved to Firebase for a trip is incorrect
 
-###Additional Features To Be Implemented
+### Additional Features To Be Implemented
 + Ability to save multiple events on a trip.
 + Display event location on map.
 + Video playback on full screen.
