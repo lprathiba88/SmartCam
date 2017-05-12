@@ -1,7 +1,7 @@
 # SmartCam
 
 ### App Images: 
-![Alt text](Users/prathi/Documents/iOS_Related/Presentations/SmartCam/ScreenShots/IMG_4935.PNG)
+![Alt text](SmartCam/ScreenShots/IMG_4935.PNG)
 
 ### Purpose: 
 Help the user to keep a record of sudden, unexpected events on road.
