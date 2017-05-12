@@ -1,5 +1,8 @@
 # SmartCam
 
+### App Icon: 
+![Alt text](SmartCam/SmartCam/Assets.xcassets/AppIcon.appiconset/DashCam_AppIcon-20@2x.png)
+
 ### App Images: 
 ![Alt text](ScreenShots/IMG_4931.PNG)     ![Alt text](ScreenShots/IMG_4934.PNG)     ![Alt text](ScreenShots/IMG_4932.PNG)     ![Alt text](ScreenShots/IMG_4933.PNG)     ![Alt text](ScreenShots/IMG_4935.PNG)
 
